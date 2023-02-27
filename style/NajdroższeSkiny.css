@@ -13,7 +13,6 @@ body{
 }
 
 .background-image {
-	background-image: url(banner2.jpg);
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
@@ -109,3 +108,8 @@ h4{
 	text-align: center;
 }
 
+p{
+	z-index: 999;
+	color: white;
+	text-align: center;
+}
