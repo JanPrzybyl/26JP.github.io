@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Witaj na stronie z samochodami od Lexusa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            background-color: rgb(67, 62, 73) ;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .glowny-text {
+            font-size: 24px;
+            color: black;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text {
+            color: black;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        img{
+            z-index: -1;
+        }
+
+        .jakas-pozycja {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .przycisk{
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .przycisken{
+            width: 200px;
+            height: 50px;
+            background-color: rgb(219, 193, 173);
+            border: 1.5px solid rgb(146, 132, 144);
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .przycisken:hover{
+            background-color: rgb(199, 173, 153);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="glowny-text">
+            <h1>Witaj na stronie z samochodami od Lexusa</h1>
+        </div>
+        <div class="jakas-pozycja">
+            <div class="text">
+                <p>Kliknij w przycisk poniżej, aby zobaczyć wszystkie modele.</p>
+            </div>
+        </div>
+        <div class="przycisk">
+            <button class="przycisken" onclick="window.location.href = 'strona/index.html';">Przejdź do strony</button>
+        </div>
+        <img src="strona/zdjecia/tlo.jpg" width="100%">
+    </center>
+</body>
+</html>

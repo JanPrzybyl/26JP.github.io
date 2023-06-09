@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.car-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.car-list-item {
+    margin-bottom: 10px;
+}
+
+.car-form {
+    display: flex;
+    text-align: center;
+    color: rgb(243, 232, 235);
+    font-family: 'Roboto', sans-serif;
+}
+
+.car-form button {
+    width: 100px;
+    height: 40px;
+    background-color:rgb(219, 193, 173) ;
+    color: rgb(67, 62, 73);
+    border: 1.5px solid rgb(146, 132, 144);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+}
+
+.car-form button:hover {
+    background-color: rgb(199, 173, 153);
+}
+
+.accessory-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accessory-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.purchase-confirmation {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.akcesoria{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(67, 62, 73) ;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: 800px;
+    text-align: center;
+    align-content: center;
+    width: 500px; 
+}
+
+.box{
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid rgb(146, 132, 144);
+    background-color: rgb(243, 232, 235);
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 5px;
+}
+
+.cena{
+    color:red;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 700px;
+    
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    background-color:rgb(219, 193, 173) ;
+    color: rgb(67, 62, 73);
+    border: 1.5px solid rgb(146, 132, 144);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    margin-top: 5px;
+}
+
+button:hover{
+    background-color: rgb(199, 173, 153);
+}
+
+.logo img{
+    width: 300px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.purchase-button{
+    width: 100px;
+    height: 40px;
+    background-color:rgb(219, 193, 173) ;
+    color: rgb(67, 62, 73);
+    border: 3px solid rgb(146, 132, 144);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.container-formularz{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: 580px;
+    text-align: center;
+    align-content: center;
+    width: 700px; 
+}
+
+.box-formularz{
+    width: 700px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(67, 62, 73);;
+    background-color: rgb(243, 232, 235);
+    border-radius: 25px;
+    border: 5px solid rgb(146, 132, 144);
+}

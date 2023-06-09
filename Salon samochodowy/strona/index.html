@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Głowna</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="zdjecia/logo.png" width="20px">
+    </div>
+
+    <ul class="car-list">
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/LS ELEGANCE.jpg" alt="Car 1">
+                    <div class="cena">Cena: 550.000zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: LS</div>
+                    <div>Wariant: ELEGANCE</div>
+                    <div>Moc silnika: 245 KM</div>
+                    <div>Przebieg: 50km</div>
+                    <button onclick="showConfigForm(0)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/RX F SPORT.jpg" alt="Car 2">
+                    <div class="cena">Cena: 490.900zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: RX</div>
+                    <div>Wariant: F SPORT</div>
+                    <div>Moc silnika: 371 KM</div>
+                    <div>Przebieg: 40km</div>
+                    <button onclick="showConfigForm(1)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/RZ.jpg" width="700px" alt="Car 3">
+                    <div class="cena">Cena: 389.900zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: RZ</div>
+                    <div>Wariant: OMOTENASHI</div>
+                    <div>Moc silnik: 313 KM</div>
+                    <div>Przebieg: 47km</div>
+                    <button onclick="showConfigForm(2)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/ES F SPORT.jpg" alt="Car 4">
+                    <div class="cena">Cena: 307.000zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: ES</div>
+                    <div>Wariant: F SPORT</div>
+                    <div>Moc silnik: 218 KM</div>
+                    <div>Przebieg: 22km</div>
+                    <button onclick="showConfigForm(3)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/LC500.jpg" alt="Car 5">
+                    <div class="cena">Cena: 790.600zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: LC</div>
+                    <div>Wariant: Superturismo</div>
+                    <div>Moc silnik: 471 KM</div>
+                    <div>Przebieg: 31km</div>
+                    <button onclick="showConfigForm(4)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/NX.jpg" alt="Car 6">
+                    <div class="cena">Cena: 317.900zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: NX</div>
+                    <div>Wariant: F SPORT</div>
+                    <div>Moc silnik: 243 KM</div>
+                    <div>Przebieg: 66km</div>
+                    <button onclick="showConfigForm(5)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/RC F.jpg" alt="Car 7">
+                    <div class="cena">Cena: 651.600zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: RC F</div>
+                    <div>Wariant: Track Edition</div>
+                    <div>Moc silnik: 464 KM</div>
+                    <div>Przebieg: 28km</div>
+                    <button onclick="showConfigForm(6)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+        <li class="car-list-item">
+            <div class="container">
+                <div class="box">
+                    <img src="zdjecia/UX.jpg" alt="Car 8">
+                    <div class="cena">Cena:272.900zł</div>
+                    <div>Rocznik: 2023</div>
+                    <div>Model: UX</div>
+                    <div>Wariant: BUSINESS</div>
+                    <div>Moc silnik: 204 KM</div>
+                    <div>Przebieg: 51km</div>
+                    <button onclick="showConfigForm(7)">WYBIERZ</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div id="car-form" class="car-form">
+        <button type="button" onclick="goBack()">Powrót do wyboru</button>
+        <h1>Formularz konfiguracji</h1>
+        <div class="container-formularz">
+            <div class="box-formularz">
+                <form onsubmit="validatePurchase(event)">
+                    <div>
+                    <input type="radio" id="financing-lease" name="financing" value="lease">
+                    <label for="financing-lease">Leasing</label>
+                    <input type="radio" id="financing-cash" name="financing" value="cash">
+                    <label for="financing-cash">Gotówka</label>
+                </div>
+                <div>
+                    <label for="owner-name">Imię i Nazwisko:</label>
+                    <input type="text" id="owner-name" name="ownerName">
+                </div>
+                <div>
+                    <label for="delivery-date">Data dostawy:</label>
+                    <select id="delivery-date" name="deliveryDate"></select>
+                </div>
+                <h2>Akcesoria:</h2>
+                <div class="akcesoria">
+                    <ul class="accessory-list">
+                    <li class="accessory-list-item">
+                        <input type="checkbox" id="accessory1" name="accessories" value="1">
+                        <label for="accessory1">KOMPLET KÓŁ ZIMOWYCH (Cena: 9900 zł)</label>
+                    </li>
+                    <li class="accessory-list-item">
+                        <input type="checkbox" id="accessory2" name="accessories" value="2">
+                        <label for="accessory2">BAGAŻNIK DACHOWY LEXUS ALPINE (Cena: 6730 zł)</label>
+                    </li>
+                    <li class="accessory-list-item">
+                        <input type="checkbox" id="accessory3" name="accessories" value="3">
+                        <label for="accessory3">ELEKTRYCZNIE STEROWANA ZASŁONA SZYBERDACHU (Cena: 8500 zł)</label>
+                    </li>
+                    <li class="accessory-list-item">
+                        <input type="checkbox" id="accessory4" name="accessories" value="4">
+                        <label for="accessory4">BELKI DACHOWE (Z DACHEM PANORAMICZNYM) (Cena: 1839 zł)</label>
+                    </li>
+                    <li class="accessory-list-item">
+                        <input type="checkbox" id="accessory5" name="accessories" value="5">
+                        <label for="accessory5">LC SKÓRA NATURALNA F SPORT DARK ROSE(Cena: 5000 zł)</label>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <button  class="purchase-button" type="submit">Zakup</button>
+            <div id="error-message" class="error-message"></div>
+            <br>
+        </form>
+    </div>
+    </div>
+    </div>
+
+    <div id="purchase-confirmation" class="purchase-confirmation">
+        <h2>Potwierdzenie zakupu</h2>
+        <p>Dziękujemy za zakup auta!</p>
+        <p>Metoda płatności: <span id="payment-method"></span></p>
+        <p>Cena auta z akcesoriami: <span id="total-price"></span>zł</p>
+        <img src="zdjecia/" alt="Car Image" width="700px" id="car-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
